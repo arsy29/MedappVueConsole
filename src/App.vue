@@ -10,29 +10,5 @@
   }
 </script>
 
-<style lang="scss">
-
-@import "./styles-variables.scss";
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: $img_bg;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  -webkit-background-size: cover !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 100vh;
-  position: relative !important;
-  width: 100% !important;
-  z-index: 0;
-}
-
-body {
-  margin:0px;	
-  padding:0px;
-}
+<style lang="scss" src="./App.scss">
 </style>
