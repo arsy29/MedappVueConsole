@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- insert sub nav here!!! -->
     <router-view></router-view>
   </div>
 </template>

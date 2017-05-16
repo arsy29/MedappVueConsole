@@ -13,7 +13,7 @@
                         <div>
                             <el-form ref="form" :model="loginForm">
                                 <div class="text-center">
-                                    <img class="logo" src="../../assets/logo/logo.png" align="middle"/>
+                                    <img class="logo" src="../../assets/logo/logo.png" align="middle" />
                                 </div>
                                 <el-form-item label="Username:">
                                     <el-input placeholder="Username" v-model="loginForm.username">
@@ -43,14 +43,13 @@
                 loginForm: {
                     username: '',
                     Password: '',
-                },
-                displayLoginPopUp: true
+                }
             };
         },
         methods: {
             onSubmit() {
                 console.log(this.loginForm);
-                this.displayLoginPopUp = false;
+                this.$router.push({path: '/dashboard'})
             }
         }
     }
