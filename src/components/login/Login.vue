@@ -1,38 +1,24 @@
 <template>
-    <div class="login">
-        <el-row>
-            <el-col :xs="1" :sm="2" :md="4" :lg="7">
-                <br/>
-            </el-col>
-            <el-col :xs="22" :sm="20" :md="16" :lg="10">
-                <div class="card-container">
-                    <el-card class="box-card">
-                        <div slot="header">
-                            <h2>What's App Doc Console</h2>
-                        </div>
-                        <div>
-                            <el-form ref="form" :model="loginForm">
-                                <div class="text-center">
-                                    <img class="logo" src="../../assets/logo/logo.png" align="middle" />
-                                </div>
-                                <el-form-item label="Username:">
-                                    <el-input placeholder="Username" v-model="loginForm.username">
-                                    </el-input>
-                                </el-form-item>
-                                <el-form-item label="Password:">
-                                    <el-input type="password" placeholder="Password" v-model="loginForm.password">
-                                    </el-input>
-                                </el-form-item>
-                                <el-form-item class="text-right">
-                                    <el-button class="submit-button" type="primary" @click="onSubmit">Login</el-button>
-                                </el-form-item>
-                            </el-form>
-                        </div>
-                    </el-card>
-                </div>
-            </el-col>
-        </el-row>
-    </div>
+    <md-card>
+        <!--<md-card-media>
+            <img src="assets/card-image-1.jpg" alt="People">
+        </md-card-media>-->
+
+        <md-card-header>
+            <div class="md-title">Title goes here</div>
+            <div class="md-subhead">Subtitle here</div>
+        </md-card-header>
+
+        <md-card-actions>
+            <md-button>Action</md-button>
+            <md-button>Action</md-button>
+        </md-card-actions>
+
+        <md-card-content>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non,
+            voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
+        </md-card-content>
+    </md-card>
 </template>
 
 <script>
@@ -49,7 +35,7 @@
         methods: {
             onSubmit() {
                 console.log(this.loginForm);
-                this.$router.push({path: '/dashboard'})
+                this.$router.push({ path: '/dashboard' })
             }
         }
     }

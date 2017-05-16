@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import App from './App'
+import App from './app'
 import router from './router/app-router'
-import 'element-ui/lib/theme-default/index.css'
-import ElementUI from 'element-ui';
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI)
+Vue.use(VueMaterial)
 
 
 /* eslint-disable no-new */
