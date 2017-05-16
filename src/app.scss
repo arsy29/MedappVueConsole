@@ -1,6 +1,6 @@
 @import "./styles-variables.scss";
 
-#app {
+body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,14 +11,8 @@
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  height: 100vh;
+  height: 100%;
   position: relative !important;
-  width: 100% !important;
-}
-
-body {
-  margin:0px;	
-  padding:0px;
 }
 
 // Variables and defaults
@@ -27,19 +21,4 @@ body {
 }
 .text-right{
   text-align: right;
-}
-
-
-
-html { 
-  font-size: 75%;
- // 12px 
-}
-body { 
-  font-size: 1rem;
- // 12px 
-}
-li { 
-  font-size: 0.833rem;
- // 10px 
 }
