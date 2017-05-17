@@ -8,6 +8,16 @@ Vue.config.productionTip = false
 
 Vue.use(VueMaterial)
 
+Vue.material.registerTheme({
+  default: {
+    primary: 'black',
+    accent: 'amber',
+    warn: 'red'
+  },
+  buttons: {
+    primary: 'amber'
+  }
+})
 
 /* eslint-disable no-new */
 new Vue({
