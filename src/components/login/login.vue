@@ -8,9 +8,8 @@
                     <md-card-header>
                         <div class="md-title">Console</div>
                     </md-card-header>
-
-                    <md-card-content>
-                        <form novalidate v-model="loginForm">
+                    <form novalidate v-on:submit.prevent="onSubmit">
+                        <md-card-content>
                             <md-theme>
                                 <md-input-container>
                                     <label>Username</label>
@@ -21,14 +20,13 @@
                                     <md-input type="password" v-model="loginForm.password"></md-input>
                                 </md-input-container>
                             </md-theme>
-                        </form>
-                    </md-card-content>
-
-                    <md-card-actions>
-                        <md-theme md-name="buttons">
-                            <md-button class="md-raised md-primary" type="submit" v-on:click="submit">Login</md-button>
-                        </md-theme>
-                    </md-card-actions>
+                        </md-card-content>
+                        <md-card-actions>
+                            <md-theme md-name="buttons">
+                                <md-button class="md-raised md-primary" type="submit">Login</md-button>
+                            </md-theme>
+                        </md-card-actions>
+                    </form>
                 </md-card>
             </md-layout>
         </md-layout>
@@ -47,7 +45,7 @@
             };
         },
         methods: {
-            submit() {
+            onSubmit(event) {
                 console.log(this.loginForm);
                 this.$router.push({ path: '/dashboard' })
             }
