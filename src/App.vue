@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <!-- insert main nav here!!! -->
-    <router-view></router-view>
-  </div>
+<div id="app">
+  <!-- insert main nav here!!! -->
+  <router-view></router-view>
+</div>
 </template>
 
 <style lang="scss">
-  @import "./styles-variables.scss";
+@import "./styles-variables.scss";
 
-  body {
+body {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,18 +22,9 @@
     height: 100%;
     position: relative !important;
     margin: 0;
-  }
+}
 
-  // Variables and defaults
-  .text-center{
-    text-align: center;
-  }
-
-  .text-right{
-    text-align: right;
-  }
-
-  /*@media (min-width: 1280px) {
+/*@media (min-width: 1280px) {
     #app {
       padding-left: 304px;
     }
@@ -47,7 +38,7 @@
 </style>
 
 <script>
-  export default {
-    name: 'app'
-  }
+export default {
+  name: 'app'
+}
 </script>
