@@ -5,12 +5,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'app'
-  }
-</script>
-
 <style lang="scss">
   @import "./styles-variables.scss";
 
@@ -51,3 +45,9 @@
     }
   }*/
 </style>
+
+<script>
+  export default {
+    name: 'app'
+  }
+</script>

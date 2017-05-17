@@ -3,6 +3,10 @@
     <!-- to be transefered to app.vue -->
 </template>
 
+<style scoped lang="scss">
+    @import "../styles-variables.scss";
+</style>
+
 <script>
 
     import MainNav from '@/components/MainNav'
@@ -13,7 +17,3 @@
         }
     }
 </script>
-
-<style scoped lang="scss">
-    @import "../styles-variables.scss";
-</style>

@@ -40,25 +40,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
-                loginForm: {
-                    username: '',
-                    password: '',
-                }
-            };
-        },
-        methods: {
-            onSubmit(event) {
-                console.log(this.loginForm);
-                this.$router.push({ path: '/dashboard' })
-            }
-        }
-    }
-</script>
-
 <style scoped lang="scss">
     @import "../styles-variables.scss";
 
@@ -85,3 +66,22 @@
         height: auto;
     }
 </style>
+
+<script>
+    export default {
+        data() {
+            return {
+                loginForm: {
+                    username: '',
+                    password: '',
+                }
+            };
+        },
+        methods: {
+            onSubmit(event) {
+                console.log(this.loginForm);
+                this.$router.push({ path: '/dashboard' })
+            }
+        }
+    }
+</script>

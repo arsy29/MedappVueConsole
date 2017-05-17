@@ -23,6 +23,9 @@
     </div>
 </template>
 
+<style scoped lang="scss">
+</style>
+
 <script>
     export default {
         methods: {
@@ -44,6 +47,3 @@
         }
     }
 </script>
-
-<style scoped lang="scss">
-</style>
