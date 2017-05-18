@@ -1,6 +1,7 @@
 <template>
-<MainNav/>
-<!-- to be transefered to app.vue -->
+<page-content>
+  test
+</page-content>
 </template>
 
 <style scoped lang="scss">
@@ -8,6 +9,5 @@
 </style>
 
 <script>
-export default {
-}
+export default {}
 </script>

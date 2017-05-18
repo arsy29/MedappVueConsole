@@ -6,6 +6,7 @@ import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.css';
 
 /* COMPONENTS */
+import MainNav from '@/components/MainNav';
 import PageContent from '@/components/PageContent';
 
 Vue.config.productionTip = false;
@@ -13,6 +14,7 @@ Vue.config.productionTip = false;
 Vue.use(VueMaterial);
 
 Vue.component('page-content', PageContent);
+Vue.component('main-nav', MainNav);
 
 Vue.material.registerTheme({
   default: {
