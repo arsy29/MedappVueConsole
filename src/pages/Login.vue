@@ -1,5 +1,5 @@
 <template>
-<div class="card-container">
+<page-content>
   <md-layout md-gutter>
     <md-layout md-flex-xsmall="10" md-flex-small="20" md-flex-medium="25" md-flex-large="35">
     </md-layout>
@@ -37,7 +37,7 @@
       </md-card>
     </md-layout>
   </md-layout>
-</div>
+</page-content>
 </template>
 
 <style scoped lang="scss">
@@ -46,13 +46,6 @@
 .md-theme-default.md-card {
     width: 100%;
     background-color: $backdrop;
-}
-
-.card-container {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100vw;
-    height: 100vh;
 }
 
 .logo-holder {
